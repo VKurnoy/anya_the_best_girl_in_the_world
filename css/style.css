@@ -105,8 +105,8 @@ img {
 
 .nav-item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 
   font-weight: 500;
   font-size: 14px;
