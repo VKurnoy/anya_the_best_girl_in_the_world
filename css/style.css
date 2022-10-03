@@ -66,6 +66,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: "Raleway";
@@ -105,8 +106,6 @@ img {
 
 .nav-item {
   display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 
   font-weight: 500;
   font-size: 14px;
@@ -127,8 +126,8 @@ img {
 
 /*------------hero--------- */
 .hero {
+  display: flex;
   background: var(--backgound-hero);
-  text-align: center;
   padding: 200px 0;
 }
 
@@ -147,17 +146,25 @@ img {
 }
 
 .hero-btn {
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-btn {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
   color: #ffffff;
   background-color: var(--btn-hover-color);
+
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-  padding: 10px 32px;
+  width: 216px;
+  height: 50px;
   min-width: 216px;
   text-align: center;
 }
@@ -197,9 +204,15 @@ img {
 }
 
 /*------- ABOUT----- */
-.title {
-  margin-bottom: 30px;
+
+.about-section {
+  padding-top: 0;
 }
+
+.title {
+  margin-bottom: 50px;
+}
+
 .about-list {
   display: flex;
   gap: 30px;
@@ -226,6 +239,10 @@ img {
 .our-team {
   display: flex;
   gap: 30px;
+  justify-content: center;
+}
+.name-team {
+  display: flex;
   justify-content: center;
 }
 .about-member {
@@ -271,13 +288,21 @@ img {
 .logo-footer {
   color: var(--background-maket);
 }
+.address {
+  margin-top: 20px;
+}
+.address-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 
 /* Portfolio secntion */
 .btn-list {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-filters {
@@ -292,11 +317,11 @@ img {
   color: var(--second-color);
   background: #f5f4fa;
 
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
 }
+
 .btn-filters:focus,
 .btn-filters:hover {
   color: #ffffff;
@@ -314,11 +339,10 @@ img {
   width: 370px;
   height: 404px;
   background: var(--background-maket);
-  border: 1px solid #eeeeee;
 }
 
 .projects-iteam {
-  width: calc(100% / 3 - 30px);
+  width: calc((100% - 60px) / 3);
 }
 
 .projects-descr {
@@ -336,7 +360,12 @@ img {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--third-color);
+  margin-top: 4px;
 }
 .description-proj {
   padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
